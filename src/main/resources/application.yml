@@ -1,0 +1,12 @@
+server:
+  port: 8080
+
+logging:
+  level:
+    root: INFO
+    com.example.ratelimiter: DEBUG
+
+ratelimiter:
+  capacity: 100          # Max tokens per bucket
+  refillTokens: 100      # Tokens added each period
+  refillPeriod: PT1M     # Refill period (1 minute)
