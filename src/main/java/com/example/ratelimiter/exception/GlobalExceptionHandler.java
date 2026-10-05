@@ -15,6 +15,7 @@ public class GlobalExceptionHandler {
 
     private static final Logger logger = LoggerFactory.getLogger(GlobalExceptionHandler.class);
 
+// tiny readability tweak
     @ExceptionHandler(RateLimitExceededException.class)
     public ResponseEntity<String> handleRateLimitExceeded(RateLimitExceededException ex) {
         logger.info("Rate limit exception handled: {}", ex.getMessage());
