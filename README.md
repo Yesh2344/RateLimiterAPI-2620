@@ -23,3 +23,5 @@ It uses **Bucket4j** for token‑bucket based throttling, applies the limit per 
 - Docker (optional, for containerised deployment)
 
 ## Installation
+
+<!-- small cleanup -->
