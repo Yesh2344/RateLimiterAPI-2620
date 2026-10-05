@@ -25,3 +25,5 @@ It uses **Bucket4j** for token‑bucket based throttling, applies the limit per 
 ## Installation
 
 <!-- small cleanup -->
+
+<!-- left a breadcrumb -->
