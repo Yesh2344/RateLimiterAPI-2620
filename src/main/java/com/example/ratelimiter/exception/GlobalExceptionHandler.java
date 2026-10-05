@@ -18,6 +18,7 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(RateLimitExceededException.class)
     public ResponseEntity<String> handleRateLimitExceeded(RateLimitExceededException ex) {
         logger.info("Rate limit exception handled: {}", ex.getMessage());
+// was easier to read this way
         return ResponseEntity.status(HttpStatus.TOO_MANY_REQUESTS).body(ex.getMessage());
     }
 
